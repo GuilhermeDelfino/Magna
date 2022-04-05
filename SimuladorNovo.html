@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="PTBR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <title>Simulador Financeiro</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="container-icon">
+                <img class="img-header" src="LogoMagna/logo-branca.png" alt="">
+            </div>
+            <ul class="navbar">
+                <li><a>Início</a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Contato</a></li>
+                <li class="agora"><a>Simulador</a></li>
+                <li><a>Entrar</a></li>
+                <li><a>Cadastrar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--DIV DA JUSTIFICATIVA-------------------------------------------------------------------------------------------------------->
+    <div class="container-main box">
+        <div class="container-h">
+            <div class="box div-simulador">
+                <h1>Simulador</h1>
+                <div class="box">
+                    <span>Entrada:</span>
+                    <input type="text">
+                </div>
+                <div class="box">
+                    <span>Entrada:</span>
+                    <input type="text">
+                </div>
+                <button>Botão</button>
+            </div>
+            <div class="box paragrafo">
+                <h4>Conheça seu Público</h4>
+                <h5> Sabia que cerca de 70% das pessoas que frequêntam seu shopping diáriamente
+                    passam pela praça de alimentação? </h5>
+
+                <h5>Cada consumidor gasta em média R$30,00
+                    e ocupa uma cadeira por cerca de 30 minutos, porém 84% desses consumidores
+                    não aceitam esperar mais de 10 minutos por um lugar e acabam indo embora,</h5>
+
+                <h5>Com a nossa solução analítica você consegue entender o comportamento dos
+                    seus consumidores e melhorar a infraestrutura do seu shopping, gerando
+                    assim maior confiança para os seus consumidores e para os franquiados
+                    que estão no seu shopping.</h5>
+            </div>
+        </div>
+        <div class="container-h">
+            <div class="div-resultado">
+                <div class="resultado">
+                    <h1 class="destaque">50%</h1>
+                    <h2>Do total de sla</h2>
+                </div>
+                <div class="resultado">
+                    <h1 class="destaque">R$ 1200,00</h1>
+                    <h2>Do total de sla</h2>
+                </div>
+                <div class="resultado">
+                    <h1 class="destaque">-1000</h1>
+                    <h2>Do total de sla</h2>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <h1 class="TitulosG">Conheça seu Público</h1>
+
+        <span>Sabia que cerca de 70% das pessoas que frequêntam seu shopping diáriamente
+        passam pela praça de alimentação? Cada consumidor gasta em média R$30,00
+        e ocupa uma cadeira por cerca de 30 minutos, porém 84% desses consumidores
+        não aceitam esperar mais de 10 minutos por um lugar e acabam indo embora,
+        gerando assim perda de confiança pois o cliente sai insatisfeito com a
+        infraestrutura do shopping, e consequentemente para os franquiados que
+        estão no seu shopping, pois acabam perdendo dinheiro. <br>
+        Com a nossa solução analítica você consegue entender o comportamento dos
+        seus consumidores e melhorar a infraestrutura do seu shopping, gerando
+        assim maior confiança para os seus consumidores e para os franquiados
+        que estão no seu shopping. <br> </span>
+
+        <h3>Com base nos dados de alguns clientes geramos um gráfico com os 
+            horários de pico dos shoppings
+        </h3>
+
+        <div>
+        
+        </div>
+
+        <!--DIV DA CALCULADORA---------------------------------------------------------------------------------------------------------
+        <div style="width: 30%; float: left; margin-left: 4%;">
+        
+            <H1 class="TitulosG">Veja Quanto Está Perdendo</H1>
+        
+            <h4 class="TitulosM">Fluxo de Pessoas Diário: </h4>
+            <input class="Input" id="Fluxo"> <br>
+        
+            <h4 class="TitulosM">Quantidade de Assentos Disponível:</h4> 
+            <input class="Input" id="Assentos"> <br>
+        
+            <button class="Botao" onclick="Calcular()">Calcular</button>
+        
+            <div id="Resultado"></div>
+        
+        </div>
+    -->
+
+
+
+    <div class="footer">
+        <div class="container-icon">
+            <img class="img-logo" src="LogoMagna/logo-magna-branca.png">
+        </div>
+        <div class="footer-copy">
+            <h5 class="h5-endereco">R.Bela Cintra, 1551 - Cerqueira César,</h5>
+            <h5 class="h5-endereco"> São paulo - SP, 01415-001</h5>
+            <h5>Copyright 2010-2022 Magna Company S.I. Todos os direitos reservados.</h5>
+        </div>
+        <div class="footer-contato">
+            <h5> email.magna@gmail.com </h5>
+            <div>
+                <a><img src="img/icons8-linkedin.svg"></a>
+                <a><img src="img/icons8-google-logo.svg"></a>
+                <a><img src="img/icons8-facebook.svg"></a>
+                <a><img src="img/icons8-instagram.svg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    function Calcular() {
+        var FluxoPA = Number(Fluxo.value * 0.7);
+        var UsamPA = Number(Assentos.value * 2);
+        var PicoPA = FluxoPA * 0.10;
+        var SLugarPA = PicoPA - UsamPA;
+        var DesistPA = (SLugarPA * 0.84).toFixed(0);
+        var PrejuPA = (DesistPA * 30).toFixed(2);
+
+        Resultado.innerHTML = `
+        <h4 class="TitulosM">Considerando que um assento acomoda em média 2 pessoas por hora e que o horário de pico (13:00 às 14:00) 
+        equivale a 10% do fluxo total diário você está perdendo <span style="color:red;">SÓ NO HORÁRIO DE PICO </span> em média: </h4> <br> 
+
+        <h2 class="TitulosM"> <span style="color:red">${DesistPA}</span> <br> Consumidores insatisfeitos </h2> <br>
+
+        <h2 class="TitulosM"> E você está perdendo em <b style="color:red;">UMA HORA</b> <br> <span style="color:red">R$${PrejuPA}</span></h2> <br>
+
+        `
+    }
+</script>
