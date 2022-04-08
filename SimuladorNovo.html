@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/estilo.css">
     <title>Simulador Financeiro</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +41,10 @@
                     <span>Entrada:</span>
                     <input type="text">
                 </div>
+                <div style="display: flex;">
                 <button>Botão</button>
+                <button>Botão</button>
+                </div>
             </div>
             <div class="box paragrafo">
                 <h4>Conheça seu Público</h4>
@@ -57,9 +62,12 @@
             </div>
         </div>
         <div class="container-h">
+            <div class="box" style="position: relative; height:40vh; width:40vw">
+                <canvas id="myChart"></canvas>
+            </div>
             <div class="div-resultado">
                 <div class="resultado">
-                    <h1 class="destaque">50%</h1>
+                    <h1 class="destaque">100%</h1>
                     <h2>Do total de sla</h2>
                 </div>
                 <div class="resultado">
@@ -67,7 +75,11 @@
                     <h2>Do total de sla</h2>
                 </div>
                 <div class="resultado">
-                    <h1 class="destaque">-1000</h1>
+                    <h1 class="destaque" style="color: green;">100%+(10%)</h1>
+                    <h2>Do total de sla</h2>
+                </div>
+                <div class="resultado">
+                    <h1 class="destaque" style="color: green;">+1000</h1>
                     <h2>Do total de sla</h2>
                 </div>
                 </div>
@@ -159,4 +171,38 @@
 
         `
     }
+</script>
+<script>
+    
+ 
+ //vetor de labels
+ const labels = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  
 </script>
