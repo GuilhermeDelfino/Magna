@@ -138,11 +138,12 @@
     }
 
       function calcular_Anual(){
-
+                
         
              if(Hora_1.value == "" || Fluxo.value == "" || Assentos.value =="") 
              {alert("Por favor insira Algum valor ")}
-             else{  
+             else{   
+                 calcular()
                  var anual = valor * 365
 
                   H1_preju.innerHTML = anual.toLocaleString('pt-br', {style: 'currency', currency:'BRL'} )
