@@ -11,10 +11,7 @@
 }
 
 .c-navbar {
-    height: 100%;
-    margin: 0 auto;
-    max-width: var(--size-xlg);
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;

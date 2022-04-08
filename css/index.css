@@ -11,5 +11,5 @@
 @import url(./components/footer.css);
 @import url(./components/header.css);
 
-
-
+/* Padrões  */
+@import url(./default/classes.css);
