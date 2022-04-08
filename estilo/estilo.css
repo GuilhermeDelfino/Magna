@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url(fonts/Poppins-Regular.ttf)
+    src: url(../fonts/Poppins-Regular.ttf)
   }
 body{
     margin: 0;
@@ -195,4 +195,8 @@ a{
     text-decoration: none;
     color: #F5F5F5;
     cursor: pointer;
+}
+.div_btn{
+    display: flex;
+    justify-content: space-evenly;
 }

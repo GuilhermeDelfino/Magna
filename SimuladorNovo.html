@@ -32,14 +32,23 @@
             <div class="box div-simulador">
                 <h1>Simulador</h1>
                 <div class="box">
-                    <span>Entrada:</span>
-                    <input type="text">
+                    <span>Qual a duração do seu horario de pico?</span>
+                    <input type="text" id="Hora_1">
+                </div>
+                
+               
+                <div class="box">
+                    <span>Coloque aqui qual o fluxo nesse horario:</span>
+                    <input type="text" id="Fluxo">
                 </div>
                 <div class="box">
-                    <span>Entrada:</span>
-                    <input type="text">
+                    <span>Coloque aqui a quantidade de assentos no seu Shopping:</span>
+                    <input type="text" id="Assentos">
                 </div>
-                <button>Botão</button>
+                <div class="div_btn" >
+                  <button onclick="calcular()">Diario</button>
+                  <button onclick="calcular_Anual()">Anual</button>
+                </div>
             </div>
             <div class="box paragrafo">
                 <h4>Conheça seu Público</h4>
@@ -59,60 +68,20 @@
         <div class="container-h">
             <div class="div-resultado">
                 <div class="resultado">
-                    <h1 class="destaque">50%</h1>
-                    <h2>Do total de sla</h2>
+                    <!-- segundo e terceiro são a msm coisa, primeiro = porcentagem da perda  -->
+                    <h1 id="H1_preju_porc" class="destaque">-</h1>
+                    <h2>Media da sua perda em porcentagem.</h2>
                 </div>
                 <div class="resultado">
-                    <h1 class="destaque">R$ 1200,00</h1>
-                    <h2>Do total de sla</h2>
+                    <h1 id="H1_preju" class="destaque">-</h1>
+                    <h2 id="H2_preju"> Total do Prejuizo diario.</h2>
                 </div>
-                <div class="resultado">
-                    <h1 class="destaque">-1000</h1>
-                    <h2>Do total de sla</h2>
-                </div>
+               
                 </div>
             </div>
         </div>
-        <!-- 
-        <h1 class="TitulosG">Conheça seu Público</h1>
+       
 
-        <span>Sabia que cerca de 70% das pessoas que frequêntam seu shopping diáriamente
-        passam pela praça de alimentação? Cada consumidor gasta em média R$30,00
-        e ocupa uma cadeira por cerca de 30 minutos, porém 84% desses consumidores
-        não aceitam esperar mais de 10 minutos por um lugar e acabam indo embora,
-        gerando assim perda de confiança pois o cliente sai insatisfeito com a
-        infraestrutura do shopping, e consequentemente para os franquiados que
-        estão no seu shopping, pois acabam perdendo dinheiro. <br>
-        Com a nossa solução analítica você consegue entender o comportamento dos
-        seus consumidores e melhorar a infraestrutura do seu shopping, gerando
-        assim maior confiança para os seus consumidores e para os franquiados
-        que estão no seu shopping. <br> </span>
-
-        <h3>Com base nos dados de alguns clientes geramos um gráfico com os 
-            horários de pico dos shoppings
-        </h3>
-
-        <div>
-        
-        </div>
-
-        <!--DIV DA CALCULADORA---------------------------------------------------------------------------------------------------------
-        <div style="width: 30%; float: left; margin-left: 4%;">
-        
-            <H1 class="TitulosG">Veja Quanto Está Perdendo</H1>
-        
-            <h4 class="TitulosM">Fluxo de Pessoas Diário: </h4>
-            <input class="Input" id="Fluxo"> <br>
-        
-            <h4 class="TitulosM">Quantidade de Assentos Disponível:</h4> 
-            <input class="Input" id="Assentos"> <br>
-        
-            <button class="Botao" onclick="Calcular()">Calcular</button>
-        
-            <div id="Resultado"></div>
-        
-        </div>
-    -->
 
 
 
@@ -141,22 +110,40 @@
 
 
 <script>
-    function Calcular() {
-        var FluxoPA = Number(Fluxo.value * 0.7);
-        var UsamPA = Number(Assentos.value * 2);
-        var PicoPA = FluxoPA * 0.10;
-        var SLugarPA = PicoPA - UsamPA;
-        var DesistPA = (SLugarPA * 0.84).toFixed(0);
-        var PrejuPA = (DesistPA * 30).toFixed(2);
+    var valor = 0
+ 
+    function calcular() {
+      if(Hora_1.value == "" || Fluxo.value == "" || Assentos.value =="") 
+      {alert("Por favor insira Algum valor ")}else{
+        var hora = Number(Hora_1.value)
+        var FluxoPraça = Number(Fluxo.value * 0.7);
+        var UsamPraça = Number(Assentos.value * 2);
+        var PicoPraça = FluxoPraça * 0.10;
+        var Sem_Lugar_Praça = PicoPraça - UsamPraça;
+        var DesistePraça = (Sem_Lugar_Praça * 0.84).toFixed(0);
+        var PrejuPraça = ((DesistePraça * 30)*hora)
+        var porcentagem = (Sem_Lugar_Praça)/PicoPraça*100 
+            valor = PrejuPraça
+     
 
-        Resultado.innerHTML = `
-        <h4 class="TitulosM">Considerando que um assento acomoda em média 2 pessoas por hora e que o horário de pico (13:00 às 14:00) 
-        equivale a 10% do fluxo total diário você está perdendo <span style="color:red;">SÓ NO HORÁRIO DE PICO </span> em média: </h4> <br> 
+             H1_preju.innerHTML = PrejuPraça.toLocaleString('pt-br', {style: 'currency', currency:'BRL'} )
 
-        <h2 class="TitulosM"> <span style="color:red">${DesistPA}</span> <br> Consumidores insatisfeitos </h2> <br>
-
-        <h2 class="TitulosM"> E você está perdendo em <b style="color:red;">UMA HORA</b> <br> <span style="color:red">R$${PrejuPA}</span></h2> <br>
-
-        `
+             H1_preju_porc.innerHTML =`${porcentagem.toFixed(2)}%`}
+             H2_preju.innerHTML=` Total do Prejuizo Diario.`
     }
+
+      function calcular_Anual(){
+
+        
+             if(Hora_1.value == "" || Fluxo.value == "" || Assentos.value =="") 
+             {alert("Por favor insira Algum valor ")}
+             else{  
+                 var anual = valor * 365
+
+                  H1_preju.innerHTML = anual.toLocaleString('pt-br', {style: 'currency', currency:'BRL'} )
+                  H2_preju.innerHTML=` Total do Prejuizo Anual.`}
+        }
+
+
+    
 </script>
