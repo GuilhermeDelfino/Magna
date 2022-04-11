@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="container-h">
-            <div class="box" style="position: relative; height:40vh; width:40vw">
+            <div class="box" style="position: relative; height:40vh; width:60vw">
                 <canvas id="myChart"></canvas>
             </div>
             <div class="div-resultado">
@@ -98,9 +98,9 @@
         <div class="footer-contato">
             <h5> email.magna@gmail.com </h5>
             <div>
-                <a><img src="img/icons8-linkedin.svg"></a>
+                <a href=""><img src="img/icons8-linkedin.svg"></a>
                 <a><img src="img/icons8-google-logo.svg"></a>
-                <a><img src="img/icons8-facebook.svg"></a>
+                <a href="https://www.facebook.com/MagnaItda"><img src="img/icons8-facebook.svg"></a>
                 <a><img src="img/icons8-instagram.svg"></a>
             </div>
         </div>
@@ -153,21 +153,27 @@
 
     //vetor de labels
     const labels = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+        'Julho',
+        'Agosto',
+        'Setembro',
+        'Outubro',
+        'Novembro',
+        'Dezembro',
     ];
 
     const data = {
         labels: labels,
         datasets: [{
-            label: 'My First dataset',
+            label: 'Dados Mensais',
             backgroundColor: 'rgb(232, 56, 71)',
             borderColor: 'rgb(232, 56, 71)',
-            data: [0, 10, 5, 2, 20, 30, 45],
+            data: [0, 10, 5, 2, 20, 30, 45, 2, 20, 30, 45, 5],
         }]
     };
 
