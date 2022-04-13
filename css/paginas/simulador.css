@@ -19,6 +19,8 @@ body{
     padding: var(--padding-lg);
     color: var(--color-white);
     width: 150%;
+    border-radius: var(--margin);
+    margin: var(--margin);
 }
 
 .container-input h1{
@@ -62,4 +64,5 @@ button{
     font-weight: bolder;
     cursor: pointer;
     padding: var(--padding-md);
+    width: 125px;
 }
