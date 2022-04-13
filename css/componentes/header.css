@@ -41,6 +41,7 @@ body {
 
 .header .navbar .menu .item:hover {
     opacity: 1;
+    color: var(--color-primary);
 }
 
 .header .navbar .menu .item .link {

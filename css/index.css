@@ -10,7 +10,6 @@
 @import url(./padrao/reset.css);
 @import url(./padrao/classes.css);
 
-
 /* Components */
 @import url(./componentes/header.css);
 @import url(./componentes/footer.css);
