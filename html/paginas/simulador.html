@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mudar em toda página o titulo -->
+        <title>Magna | Simulador</title>
+        <!-- Padrão CSS e Icones FA -->
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- ChartJS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <div class="header">
+            <div class="navbar container-lg">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="../../imagens/magna/logoBranco2.png" alt="Logotipo, Logo, Image, Magna">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="item" title="Inicio"><a href="#home" class="link">Inicio</a></li>
+                    <li class="item" title="Sobre"><a href="#about" class="link">Sobre</a></li>
+                    <li class="item" title="Contato"><a href="#contact" class="link">Contato</a></li>
+                    <li class="item" title="Simulador Financeiro"><a href="#simulator" class="link">Simulador</a></li>
+                    <li class="item" title="Entrar"><a href="#signin" class="link">Entrar</a></li>
+                    <li class="item" title="Cadastrar"><a href="#signup" class="link">Cadastrar</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- SIMULADOR -->
+
+        <div class="container-lg simulador">
+            <div class="container-h">
+                <div class="box div-simulador">
+                    <h1>Simulador</h1>
+                    <div class="box">
+                        <span>Qual a duração do seu horario de pico?</span>
+                        <input type="text" id="Hora_1">
+                    </div>
+
+
+                    <div class="box">
+                        <span>Coloque aqui qual o fluxo nesse horario:</span>
+                        <input type="text" id="Fluxo">
+                    </div>
+                    <div class="box">
+                        <span>Coloque aqui a quantidade de assentos no seu Shopping:</span>
+                        <input type="text" id="Assentos">
+                    </div>
+                    <div class="div_btn">
+                        <button onclick="calcular()">Diario</button>
+                        <button onclick="calcular_Anual()">Anual</button>
+                    </div>
+                </div>
+                <div class="box paragrafo">
+                    <h4>Conheça seu Público</h4>
+                    <h5> Sabia que cerca de 70% das pessoas que frequêntam seu shopping diáriamente
+                        passam pela praça de alimentação? </h5>
+
+                    <h5>Cada consumidor gasta em média R$30,00
+                        e ocupa uma cadeira por cerca de 30 minutos, porém 84% desses consumidores
+                        não aceitam esperar mais de 10 minutos por um lugar e acabam indo embora,</h5>
+
+                    <h5>Com a nossa solução analítica você consegue entender o comportamento dos
+                        seus consumidores e melhorar a infraestrutura do seu shopping, gerando
+                        assim maior confiança para os seus consumidores e para os franquiados
+                        que estão no seu shopping.</h5>
+                </div>
+            </div>
+            <div class="container-h">
+                <div class="box" style="position: relative; height:40vh; width:40vw">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="div-resultado">
+                    <div class="resultado">
+                        <!-- segundo e terceiro são a msm coisa, primeiro = porcentagem da perda  -->
+                        <h1 id="H1_preju_porc" class="destaque">-</h1>
+                        <h2>Media da sua perda em porcentagem.</h2>
+                    </div>
+                    <div class="resultado">
+                        <h1 id="H1_preju" class="destaque">-</h1>
+                        <h2 id="H2_preju"> Total do Prejuizo diario.</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    <script src="../../js/paginas/simulador.js"></script>
+
+</html>
