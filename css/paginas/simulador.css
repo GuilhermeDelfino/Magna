@@ -1,0 +1,133 @@
+.container-main {
+    background-color: var(--color-white);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 70px;
+    color: var(--color-white);
+    -webkit-box-shadow: 5px 5px 20px -5px var(--color-shadow);
+    box-shadow: 5px 5px 20px -5px var(--color-shadow);
+}
+
+.container-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.div-simulador {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-accent);
+    width: 30vw;
+    height: 20%;
+    border-radius: 4px;
+}
+
+.box {
+    padding: 15px;
+}
+
+.img-logo {
+    width: 100%;
+    height: 150px;
+}
+
+.agora {
+    font-weight: bold;
+}
+
+li a:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+
+}
+
+input {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: end;
+    width: 50%;
+    color: var(--color-dark);
+    font-size: 20px;
+    text-align: center;
+}
+
+.paragrafo p {
+    align-self: center;
+}
+
+.paragrafo h4 {
+    margin: 0;
+}
+
+.paragrafo h5 {
+    margin: 10px;
+}
+
+.div-simulador button {
+    align-self: flex-end;
+    background-color: var(--color-primary);
+    width: 20%;
+    height: 40px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.div-analise {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.div-resultado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.resultado {
+    color: var(--color-dark);
+    text-align: center;
+    width: 50%;
+}
+
+.destaque {
+    color: var(--color-primary);
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.div_btn {
+    display: flex;
+    justify-content: space-evenly;
+}
