@@ -1,46 +1,52 @@
-.l-header {
+body {
+    /* Para empurrar pq o menu eh fixo */
+    padding-top: 90px;
+}
+
+.header {
+    /* Para nada sobrescrever o menu, pq ele eh fixo */
+    z-index: 999;
+
     height: 80px;
     width: 100%;
+    /* usando as variaveis de cores */
     background-color: var(--color-accent-dark);
 
     box-shadow: 0 2px 8px var(--color-shadow);
 
+    /* Fixando o menu no topo */
     position: fixed;
     top: 0;
     left: 0;
 }
 
-.c-navbar {
-    
+.header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--color-white);
 }
 
-.c-navbar__menu {
+.header .navbar .menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.c-navbar__item:not(:last-child) {
+.header .navbar .menu .item {
     margin-right: var(--margin);
-}
-
-.c-navbar__item {
     transition: all .2s ease;
     opacity: .9;
 }
 
-.c-navbar__item:hover {
+.header .navbar .menu .item:hover {
     opacity: 1;
 }
 
-.c-navbar__link {
+.header .navbar .menu .item .link {
     padding: var(--padding-sm);
 }
 
-img {
+.header .navbar img {
     width: 80px;
 }
