@@ -4,9 +4,7 @@
     height: 180px;
     color: var(--color-white);
 
-    position: absolute;
-    bottom: 0;
-    left: 0;    
+    margin-top: var(--margin-lg);
 
     font-size: var(--font-md);
 

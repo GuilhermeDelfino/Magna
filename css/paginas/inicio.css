@@ -1,0 +1,22 @@
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(../../imagens/bannerFundo.png);
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--color-light);
+}
+.banner .container-lg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner .titulo-banner{
+    font-size: var(--font-title-1);
+    font-weight: bolder;
+    margin: var(--margin-lg) 0 ;
+}
+.banner .texto-banner{
+    font-size: var(--font-lg);
+    max-width: var(--size-md);
+}
