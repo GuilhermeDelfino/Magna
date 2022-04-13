@@ -38,4 +38,8 @@
 }
 .footer .footer-redes .redes-sociais .icon{
     margin-right: var(--margin);
+    opacity: .9;
+}
+.footer .footer-redes .redes-sociais .icon:hover{
+    opacity: 1;
 }
