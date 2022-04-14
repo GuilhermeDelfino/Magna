@@ -1,6 +1,7 @@
 var valor = 0;
 
-function calcular () {
+
+function calcular() {
     var hora = Number(Hora_1.value);
     var FluxoPraça = Number(Fluxo.value * 0.7);
     var UsamPraça = Number(Assentos.value * 2);
@@ -10,11 +11,11 @@ function calcular () {
     var PrejuPraça = ((DesistePraça * 30) * hora);
     var porcentagem = (Sem_Lugar_Praça) / PicoPraça * 100;
     valor = PrejuPraça;
-    if (Hora_1.value == "" || Fluxo.value == "" || Assentos.value == "")
-    {
-        alert("Por favor insira Algum valor ");
-    } else
-    {
+
+
+    if (Hora_1.value == "" || Fluxo.value == "" || Assentos.value == "") {
+        alert("Por favor, preencha todos os campos. ");
+    } else {
 
         H1_preju.innerHTML = PrejuPraça.toLocaleString('pt-br', {
             style: 'currency',
@@ -25,22 +26,19 @@ function calcular () {
     H2_preju.innerHTML = ` Total do Prejuizo Diario.`;
 }
 
-function calcular_Anual () {
+function calcular_Anual() {
 
-
-    if (Hora_1.value == "" || Fluxo.value == "" || Assentos.value == "")
-    {
-        alert("Por favor insira Algum valor ");
-    } else
-    {
-        var anual = valor * 365;
+    calcular()
+    var anual = valor * 365;
+    
+       
         H1_preju.innerHTML = anual.toLocaleString('pt-br', {
             style: 'currency',
             currency: 'BRL'
         });
         H2_preju.innerHTML = ` Total do Prejuizo Anual.`;
     }
-}
+
 
 //vetor de labels
 const labels = [
@@ -60,12 +58,12 @@ const labels = [
 
 const data = {
     labels: labels,
-    datasets: [ {
+    datasets: [{
         label: 'Dados Mensais',
         backgroundColor: 'rgb(232, 56, 71)',
         borderColor: 'rgb(232, 56, 71)',
-        data: [ 0, 10, 5, 2, 20, 30, 45, 2, 20, 30, 45, 5 ],
-    } ]
+        data: [0, 10, 5, 2, 20, 30, 45, 2, 20, 30, 45, 5],
+    }]
 };
 
 const config = {
