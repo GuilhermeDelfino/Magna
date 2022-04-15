@@ -61,13 +61,52 @@
 }
 
 .shadow-sm {
-    box-shadow: 0 0 4px var(--color-shadow);
+    box-shadow: 0 0 8px var(--color-shadow);
 }
 
 .shadow-md {
-    box-shadow: 0 2px 6px var(--color-shadow);
+    box-shadow: 0 4px 12px var(--color-shadow);
 }
 
 .shadow-lg {
-    box-shadow: 2px 2px 12px var(--color-shadow);
+    box-shadow: 2px 2px 20px var(--color-shadow);
+}
+
+.btn {
+    width: 260px;
+    height: 50px;
+    font-size: var(--font-lg);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    border: 0;
+    opacity: .9;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 1;
+}
+
+.btn.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.input {
+    border: 0;
+    margin-top: var(--margin);
+    border-radius: var(--radius-sm);
+    padding: var(--padding-sm);
+    font-size: var(--font-xmd);
+    opacity: .9;
+}
+
+.input:hover,
+input:focus {
+    opacity: 1;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
 }
