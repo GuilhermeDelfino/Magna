@@ -28,7 +28,8 @@
     border-radius: 10px;
     padding: 20px;
 }
-label{
+
+label {
     margin-bottom: -16px;
 }
 
@@ -46,7 +47,7 @@ input {
     padding-left: var(--padding-md);
 }
 
-.box_login span {
+.box_login span#crie {
     color: red;
     text-decoration: underline;
 }
@@ -69,4 +70,13 @@ button {
     height: 500px;
     background-image: url(../../imagens/storyset/imagemLogin.png);
     background-size: cover;
+}
+
+.box_login span#erro {
+color: red;
+background-color:  red;
+background:40%;
+border-radius: 20px;
+border: 2px  red;
+
 }
