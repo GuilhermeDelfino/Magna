@@ -1,41 +1,50 @@
-.footer{
+.footer {
     background-color: var(--color-primary);
     width: 100%;
     height: 180px;
     color: var(--color-white);
-    bottom: 0;
-    left: 0;    
+
+    margin-top: 80px;
     font-size: var(--font-md);
 }
-.footer .logo img{
+
+.footer .logo img {
     width: 120px;
 }
-.footer .container-lg{
+
+.footer .container-lg {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer .footer-meio{
+
+.footer .footer-meio {
     flex-direction: column;
     min-width: 400px;
 }
-.footer .footer-meio .endereco{
+
+.footer .footer-meio .endereco {
     margin: var(--margin) 0;
 }
-.footer .footer-redes{
+
+.footer .footer-redes {
     display: flex;
     flex-direction: column;
 }
-.footer .footer-redes .email{
+
+.footer .footer-redes .email {
     margin-bottom: var(--margin);
 }
-.footer .footer-redes .redes-sociais{
+
+.footer .footer-redes .redes-sociais {
     font-size: var(--font-lg);
 }
-.footer .footer-redes .redes-sociais .icon{
+
+.footer .footer-redes .redes-sociais .icon {
     margin-right: var(--margin);
     opacity: .9;
 }
-.footer .footer-redes .redes-sociais .icon:hover{
+
+.footer .footer-redes .redes-sociais .icon:hover {
     opacity: 1;
 }
