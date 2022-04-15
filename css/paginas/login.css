@@ -74,9 +74,7 @@ button {
 
 .box_login span#erro {
 color: red;
-background-color:  red;
-background:40%;
+font-family: sans-serif;
 border-radius: 20px;
-border: 2px  red;
 
 }

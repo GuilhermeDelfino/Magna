@@ -1,0 +1,175 @@
+/* Banner */
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../../imagens/bannerFundo.png);
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--color-light);
+}
+
+.banner .container-lg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .titulo-banner {
+    font-size: var(--font-title-1);
+    font-weight: 600;
+    margin: var(--margin-lg) 0;
+}
+
+.banner .texto-banner {
+    font-size: var(--font-lg);
+    max-width: var(--size-md);
+    line-height: 130%;
+}
+
+/* Missão Visão e Valores */
+.pilares {
+    padding: 80px 0;
+}
+
+.pilares .container-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pilares .card {
+    /* border: 3px red solid; */
+    height: 380px;
+    width: 24%;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--color-accent-dark);
+    color: var(--color-light);
+    padding: var(--padding-md);
+    border-radius: var(--radius-md);
+}
+
+.pilares .card .card-img {
+    width: 130px;
+    margin-bottom: var(--margin);
+}
+
+.pilares .card .body {
+    margin-top: var(--margin);
+}
+
+.pilares .card .body h3 {
+    margin-bottom: var(--margin);
+    font-size: var(--font-title-3);
+    font-weight: 600;
+}
+
+.pilares .card .body p {
+    line-height: 130%;
+}
+
+/* Quem somos */
+.sobre {
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.sobre .container-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre .esquerda {
+    width: 50%;
+}
+
+.sobre .esquerda h2 {
+    color: var(--color-primary);
+    font-size: var(--font-title-2);
+    font-weight: 600;
+    margin-bottom: var(--margin-lg);
+}
+
+.sobre .esquerda p {
+    line-height: 130%;
+    font-size: var(--font-lg);
+}
+
+.sobre .direita {
+    width: 40%;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--padding-lg);
+}
+
+.sobre .direita img {
+    width: 100%;
+}
+
+/* Contato */
+.contato {
+    color: var(--color-light);
+}
+
+.contato .container-lg {
+    padding: 60px 0;
+    border-radius: var(--radius-md);
+    background-color: var(--color-accent-dark);
+}
+
+.contato .container-lg .esquerda {
+    width: 40%;
+}
+
+.contato .container-lg .esquerda img {
+    width: 100%;
+}
+
+.contato .container-lg .direita {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contato .direita h2 {
+    font-size: var(--font-title-2);
+    font-weight: 600;
+    margin-bottom: var(--margin-lg);
+}
+
+.contato .direita .container-input {
+    width: 100%;
+    margin-bottom: var(--margin-lg);
+}
+
+.contato .direita label {
+    font-size: var(--font-xmd);
+}
+
+.contato .direita .contato-input {
+    width: 100%;
+}
+
+.contato .direita .textarea {
+    height: 160px;
+}
+
+.contato .direita .container-checkbox {
+    padding: var(--padding-md) 0;
+    justify-content: flex-start;
+}
+
+.contato .direita .container-checkbox label {
+    width: 100%;
+}
+
+.contato .direita .checkbox-contato {
+    margin-right: var(--margin);
+}
+
+.contato .direita .btn-contato {
+    align-self: flex-end;
+}
