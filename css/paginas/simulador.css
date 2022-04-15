@@ -1,7 +1,5 @@
-
 body{
     background-color: var(--color-light);
-
 }
 .simulador{
     flex-direction: row;
@@ -9,8 +7,8 @@ body{
     overflow:hidden;
     padding: var(--padding-lg);
     padding-bottom: 10px;
-    margin-top: var(--margin-lg);
-    margin-bottom: var(--margin-lg);
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: var(--radius-lg);
 }
 
@@ -26,7 +24,6 @@ body{
     padding: var(--padding-lg);
     font-weight: bold;
     font-size: var(--font-lg);
-
 }
 
 h5{
@@ -37,13 +34,17 @@ h5{
     flex-direction: column;
     text-align: center;
     height: 200px;
+    justify-content: space-around;
+}
+.destaque{
+    color: var(--color-primary);
 }
 .container-input input{
     color: var(--color-dark);
     border-radius: var(--radius-sm);
     border:none;
     height: 35px;
-
+    text-align: center;
 }
 
 .box{
@@ -51,10 +52,25 @@ h5{
     display: flex;
     flex-direction: column;
 }
+.box span{
+    padding: 10px;
+}
 
-.paragrafo {
+.dash{
+    width:30vw;
+    height:40vh;
+}
+
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
+    height: 400px;
     margin: var(--margin-lg);
+}
+.paragrafo h4{
+    font-weight: bolder;
 }
 .div_btn{
     display: flex;
@@ -78,6 +94,7 @@ button{
 .box-simulador{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 820px;
+    padding: 0;
 }

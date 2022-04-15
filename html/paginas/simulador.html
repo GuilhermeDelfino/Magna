@@ -12,17 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- ChartJS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
 </head>
 
 <body>
-
     <!-- HEADER -->
-
     <div class="header">
         <div class="navbar container-lg">
             <div class="logo">
@@ -40,9 +35,7 @@
             </ul>
         </div>
     </div>
-
     <!-- SIMULADOR -->
-
     <div class="container-lg flex-center simulador shadow-md">
         <div class="flex-center box-simulador">
             <div class="box container-input">
@@ -64,16 +57,16 @@
                     <button onclick="calcular()">Diario</button>
                     <button onclick="calcular_Anual()">Anual</button>
                 </div>
-                
+
             </div>
-            <div class="box" style="position: relative; height:40vh; width:30vw">
+            <div class="box dash">
                 <canvas id="myChart"></canvas>
             </div>
         </div>
-        <div class="container-lg flex-center box-simulador">
-
+        <div class="container-lg box-simulador">
+            <!-- paragrafo -->
             <div class="paragrafo">
-                <h4>Conheça seu Público</h4>
+                <h4 class="font-lg">Conheça seu Público</h4>
                 <h5> Sabia que cerca de 70% das pessoas que frequêntam seu shopping diáriamente
                     passam pela praça de alimentação? </h5>
 
@@ -86,21 +79,24 @@
                     assim maior confiança para os seus consumidores e para os franquiados
                     que estão no seu shopping.</h5>
             </div>
-            <div class="container-resultado">
+            <!-- resultado -->
+            <div class="container-resultado font-lg">
                 <div class="resultado">
                     <!-- segundo e terceiro são a msm coisa, primeiro = porcentagem da perda  -->
-                    <h1 id="H1_preju_porc" class="destaque">-</h1>
+                    <h1 id="H1_preju_porc" class="destaque font-xlg">-</h1>
                     <h2>Media da sua perda em porcentagem.</h2>
                 </div>
                 <div class="resultado">
-                    <h1 id="H1_preju" class="destaque">-</h1>
-                    <h2 id="H2_preju"> Total do Prejuizo diario.</h2>
+                    <h1 id="H1_preju" class="destaque font-xlg">-</h1>
+                    <h2 id="H2_preju" "> Total do Prejuizo diario.</h2>
                 </div>
-
+                <div></div>
             </div>
-
+            <!-- separação do justify content -->
+            <div></div>
         </div>
     </div>
+    <!-- Rodapé -->
     <div class="footer">
         <div class="container-lg">
             <div class="logo">
