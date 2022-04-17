@@ -54,7 +54,7 @@ body {
 .dashboard p{
     font-size: 50px;
     color:#E83847;
-    font-style: bold;
+    font-weight:900;
 }
 .dashboard h1 {
     color: #E83847;
@@ -73,8 +73,11 @@ body {
     flex-direction: column;
     background-color: rgb(216, 207, 207);
     border-radius: 15%;
-    justify-content: center;
+    justify-content:space-between;
     text-align: center;
+    padding: 4%;
+    margin: 2%;
+    align-items: center;
 }
 
 .dashboard .box2 {
@@ -83,7 +86,7 @@ body {
     flex-direction: column;
     background-color: rgb(216, 207, 207);
     border-radius: 40px;
-    padding: 5%;
+    padding: 10%;
     justify-content: center;
     text-align: center;
 }
@@ -97,6 +100,13 @@ body {
     padding: 5% 14%;
     justify-content: center;
     text-align: center;
+}
+.grafic{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
