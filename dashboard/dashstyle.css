@@ -1,0 +1,111 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2A2A2A;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav .box{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1D3557;
+
+}
+.sidenav h1{
+    color: white;
+    margin-top: -10px;
+}
+.sidenav h5{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav a img{
+    width: 10%;
+    padding-right:10px;
+}
+
+.dashboard {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+}
+.dashboard p{
+    font-size: 50px;
+    color:#E83847;
+    font-style: bold;
+}
+.dashboard h1 {
+    color: #E83847;
+}
+
+.dashboard .container {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+
+}
+
+.dashboard .box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 207, 207);
+    border-radius: 15%;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard .box2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 207, 207);
+    border-radius: 40px;
+    padding: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard .box3 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 207, 207);
+    border-radius: 40px;
+    padding: 5% 14%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
