@@ -25,6 +25,7 @@ CREATE TABLE CadastroEmpresa (
 CREATE TABLE Shopping (
 	idShopping INT PRIMARY KEY AUTO_INCREMENT,
     nomeShopping VARCHAR (50),
+	cnpjShopping CHAR (14),
     cepShopping CHAR (8),
     numeroShopping INT,
     fluxoPessoasDiarias INT,
