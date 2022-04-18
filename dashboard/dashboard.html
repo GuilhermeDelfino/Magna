@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Magna</title>
 
@@ -29,7 +30,7 @@
         <a href="#"><img src="./imgs/VectorSair.png">Sair</a>
 
     </div>
-<!-- teste -->
+    <!-- teste -->
     <div class="dashboard">
         <p>Dashboard</p>
         <div class="container">
@@ -42,9 +43,11 @@
                 <h2>Clientes satisfeitos</h2>
                 <h1>3000</h1>
             </div>
-            <div class="box">
-                
-                <img class="grafic" src="./imgs/image 4.png">
+            <div class="box" >
+                <div style="position: relative">
+                    <canvas id="myChart"></canvas>
+
+                </div>
             </div>
         </div>
         <div class="container">
@@ -63,5 +66,48 @@
 
 
 </body>
+
+<script>
+    const labels = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+    ];
+
+    const data = {
+  labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+    const config = {
+        type: 'doughnut',
+        data: data,
+        options: {}
+    };
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
+
 
 </html>
