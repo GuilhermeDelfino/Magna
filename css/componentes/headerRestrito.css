@@ -1,0 +1,101 @@
+body {
+    padding-top: 0;
+    padding-left: 300px;
+}
+
+.header-user {
+    width: 300px;
+    height: 100vh;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    z-index: 999;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-user .container-sm {
+    padding: 0;
+}
+
+.header-user .top {
+    height: 200px;
+    background: var(--color-accent-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-user .top .icon {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+    font-size: var(--font-title-2);
+    font-weight: bolder;
+    margin-bottom: var(--margin);
+}
+
+.header-user .top span {
+    margin-bottom: var(--margin) 0;
+}
+
+.header-user .top .nome-empresa {
+    font-size: var(--font-lg);
+}
+
+.header-user .menu {
+    width: 80%;
+    margin: var(--margin) auto;
+    font-size: var(--font-lg);
+}
+
+.header-user .menu i {
+    font-size: 26px;
+    width: 26px;
+}
+
+.header-user .menu img {
+    width: 26px;
+}
+
+.header-user .menu .menu-item {
+    width: 100%;
+    margin: var(--margin-lg) 0;
+    display: flex;
+    transition: .5s ease;
+    opacity: .8;
+}
+
+.header-user .menu .menu-item.agora {
+    font-weight: 600;
+    opacity: 1;
+}
+
+.header-user .menu .menu-item:hover {
+    opacity: 1;
+}
+
+.header-user .menu .menu-link {
+    cursor: pointer;
+    width: 100%;
+    padding: var(--padding-sm);
+}
+
+.header-user .menu .menu-link span {
+    margin-left: var(--margin);
+}
+
+.header-user .copy {
+    position: absolute;
+    bottom: var(--margin);
+    width: 90%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: var(--font-xsm);
+}

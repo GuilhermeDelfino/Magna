@@ -13,6 +13,7 @@
 /* Components */
 @import url(./componentes/header.css);
 @import url(./componentes/footer.css);
+@import url(./componentes/headerRestrito.css);
 
 /* Páginas */
 @import url(./paginas/simulador.css);
