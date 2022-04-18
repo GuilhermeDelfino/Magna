@@ -6,7 +6,7 @@ CREATE TABLE CadastroSite (
     nomeCompleto VARCHAR (100),
     email VARCHAR (100),
     telefone CHAR (11),
-    senha CHAR (10),
+    senha CHAR (10)
 );
 
 CREATE TABLE CadastroEmpresa (
@@ -15,7 +15,7 @@ CREATE TABLE CadastroEmpresa (
     cnpjEmpresa CHAR (14),
     telefoneEmpresa CHAR (11),
     emailEmpresa VARCHAR (110),
-    numeroEmpresa INT CHECK (numeroEmpresa > 0),
+    numeroEmpresa INT,
     cepEmpresa CHAR (8),
     fkCadastro INT,
     PRIMARY KEY (idEmpresa, fkCadastro),
@@ -23,32 +23,40 @@ CREATE TABLE CadastroEmpresa (
 );
 
 CREATE TABLE Shopping (
-	idShopping INT AUTO_INCREMENT,
+	idShopping INT PRIMARY KEY AUTO_INCREMENT,
     nomeShopping VARCHAR (50),
+	cnpjShopping CHAR (14),
     cepShopping CHAR (8),
-    numeroShopping INT CHECK (numeroShopping > 0),
-    fluxoPessoasDiarias INT CHECK (fluxoPessoasDiarias > 0),
-    capacidadeTotal INT CHECK (fluxoPessoasDiarias > 0),
+    numeroShopping INT,
+    fluxoPessoasDiarias INT,
+    capacidadeTotal INT,
     fkCadastroEmpresa INT,
-    PRIMARY KEY (idShopping, fkCadastroEmpresa),
-    FOREIGN KEY (fkCadastroEmpresa) REFERENCES CadastroEmpresa (idCadastroEmpresa)
+    FOREIGN KEY (fkCadastroEmpresa) REFERENCES CadastroEmpresa (idEmpresa)
 );
 
 CREATE TABLE Setor (
 	idSetor INT AUTO_INCREMENT,
     qtdAssentosDisponiveis INT,
-	metroQuadradoLocal DECIMAL (10,3) CHECK (metroQuadradoLocal > 0),
+	metroQuadradoLocal DECIMAL (10,3),
     apelidoSetor VARCHAR (30),
     fkShopping INT,
     PRIMARY KEY (idSetor, fkShopping),
     FOREIGN KEY (fkShopping) REFERENCES Shopping (idShopping)
 );
 
+CREATE TABLE Sensor (
+	idSensor INT,
+    apelido VARCHAR (45),
+    fkSetor INT,
+    PRIMARY KEY (idSensor, fkSetor),
+    FOREIGN KEY (fkSetor) REFERENCES Setor (idSetor)
+);
+
 CREATE TABLE Dado (
 	idDado INT,
     dataCapitura DATETIME,
     capitura CHAR (1) CHECK (capitura = "V" OR capitura = "F"),
-    fkSetor INT,
-    PRIMARY KEY (idSetor, fkShopping),
-    FOREIGN KEY (fkSetor) REFERENCES Setor (idSetor)
+    fkSensor INT,
+    PRIMARY KEY (idDado, fkSensor),
+    FOREIGN KEY (fkSensor) REFERENCES Sensor (idSensor)
 );
