@@ -1,3 +1,7 @@
+/* Scroll index */
+html{
+    scroll-behavior: smooth;
+}
 /* Banner */
 .banner {
     width: 100%;
