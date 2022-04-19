@@ -1,11 +1,11 @@
 body {
     /* Para empurrar pq o menu eh fixo */
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .header {
     /* Para nada sobrescrever o menu, pq ele eh fixo */
-    z-index: 999;
+    z-index: -1;
 
     height: 80px;
     width: 100%;

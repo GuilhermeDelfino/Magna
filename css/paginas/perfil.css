@@ -1,0 +1,51 @@
+.body-perfil {
+  height: 100vh;
+  padding-top: 0;
+  padding-left: 300px;
+}
+
+.conteudo-perfil {
+  height: 80%;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  width: 90%;
+  padding: 60px;
+  color: var(--color-light);
+}
+
+.conteudo-perfil .container {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.conteudo-perfil h1 {
+  /* border: 1px solid red; */
+  font-size: var(--font-title-2);
+  width: 100%;
+  font-weight: 600;
+  padding: var(--padding-lg) 0;
+}
+
+.conteudo-perfil .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  font-size: var(--font-lg);
+}
+
+.conteudo-perfil .box img {
+  width: 30%;
+}
+
+.conteudo-perfil .box .dados {
+  /* border: 3px solid red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
