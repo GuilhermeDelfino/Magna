@@ -5,7 +5,7 @@ body {
 
 .header {
     /* Para nada sobrescrever o menu, pq ele eh fixo */
-    z-index: -1;
+    z-index: 999;
 
     height: 80px;
     width: 100%;
