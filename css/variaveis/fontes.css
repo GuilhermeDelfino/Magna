@@ -1,0 +1,14 @@
+:root {
+    --font-family-sans-serif: 'Poppins', 'Roboto'Arial, Helvetica, sans-serif;
+    --font-family-serif: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+    --font-xsm: 10px;
+    --font-sm: 12px;
+    --font-md: 16px;
+    --font-xmd: 18px;
+    --font-lg: 24px;
+    --font-xlg: 27px;
+    --font-title-3: 40px;
+    --font-title-3: 36px;
+    --font-title-2: 56px;
+    --font-title-1: 72px;
+}

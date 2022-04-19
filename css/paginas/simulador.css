@@ -1,0 +1,100 @@
+body{
+    background-color: var(--color-light);
+}
+.simulador{
+    flex-direction: row;
+    background-color:var(--color-white);
+    overflow:hidden;
+    padding: var(--padding-lg);
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: var(--radius-lg);
+}
+
+.container-input{
+    background-color:var(--color-accent);
+    padding: var(--padding-lg);
+    color: var(--color-white);
+    border-radius: var(--margin);
+    margin: var(--margin);
+}
+
+.container-input h1{
+    padding: var(--padding-lg);
+    font-weight: bold;
+    font-size: var(--font-lg);
+}
+
+h5{
+    padding: 10px;
+}
+.container-resultado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    justify-content: space-around;
+}
+.destaque{
+    color: var(--color-primary);
+}
+.container-input input{
+    color: var(--color-dark);
+    border-radius: var(--radius-sm);
+    border:none;
+    height: 35px;
+    text-align: center;
+}
+
+.box{
+    padding: var(--padding-md);
+    display: flex;
+    flex-direction: column;
+}
+.box span{
+    padding: 10px;
+}
+
+.dash{
+    width:30vw;
+    height:40vh;
+}
+
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 400px;
+    margin: var(--margin-lg);
+}
+.paragrafo h4{
+    font-weight: bolder;
+}
+.div_btn{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--margin);
+}
+
+button{
+    align-self:flex-end;
+    background-color: #E83847;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: bolder;
+    cursor: pointer;
+    padding: var(--padding-md);
+    width: 125px;
+}
+
+.box-simulador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 820px;
+    padding: 0;
+}

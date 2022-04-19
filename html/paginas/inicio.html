@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mudar em toda página o titulo -->
+        <title>Magna | Ínicio</title>
+        <!-- Padrão CSS e Icones FA -->
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+        <!-- header -->
+        <div class="header">
+            <div class="navbar container-lg">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="../../imagens/magna/logoBranco2.png" alt="Logotipo, Logo, Image, Magna">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="item" title="Inicio"><a href="inicio.html" class="link">Inicio</a></li>
+                    <li class="item" title="Sobre"><a href="#body_sobre" class="link">Sobre</a></li>
+                    <li class="item" title="Contato"><a href="#contact" class="link">Contato</a></li>
+                    <li class="item" title="Simulador Financeiro"><a href="simulador.html" class="link">Simulador</a></li>
+                    <li class="item" title="Entrar"><a href="#signin" class="link">Entrar</a></li>
+                    <li class="item" title="Cadastrar"><a href="#signup" class="link">Cadastrar</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- conteudo -->
+
+        <div class="banner">
+            <div class="container-lg">
+                <h2 class="titulo-banner">Magna</h2>
+                <p class="texto-banner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium provident laboriosam hic
+                    ratione
+                    nostrum, placeat perspiciatis quos iste ipsa quidem porro nulla mollitia beatae et molestiae. Vel
+                    amet
+                    soluta, voluptas commodi ducimus consequuntur, aliquam at dolor saepe ut eveniet voluptatibus
+                    exercitationem! Officia beatae totam adipisci aspernatur impedit, et quos ut!
+                </p>
+            </div>
+        </div>
+
+        <!-- Missao visao e valores -->
+        <div class="pilares">
+            <div class="container-lg" id="body_sobre">
+
+                <div class="card flex-center shadow-sm">
+                    <img src="../../imagens/icones/alvo.png" class="card-img" alt="Alvo, Target, Missão">
+                    <div class="body">
+                        <h3>Missão</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pariatur atque eos, dolorem
+                            molestias
+                            dolorum.</p>
+                    </div>
+                </div>
+
+                <div class="card flex-center shadow-sm">
+                    <img src="../../imagens/icones/binoculos.png" class="card-img"
+                        alt="Visão, Binoculos, Olhar, Oculos">
+                    <div class="body">
+                        <h3>Visão</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pariatur atque eos, dolorem
+                            molestias
+                            dolorum.</p>
+                    </div>
+                </div>
+
+                <div class="card flex-center shadow-sm">
+                    <img src="../../imagens/icones/aperto-de-mao.png" class="card-img"
+                        alt="Valores, Ética, Aperto, Mão, Aperto de Mão">
+                    <div class="body">
+                        <h3>Valores</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla pariatur atque eos, dolorem
+                            molestias
+                            dolorum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Quem somos -->
+        <div class="sobre">
+            <div class="container-lg">
+                <div class="esquerda">
+                    <h2>Quem somos?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae facere, alias
+                        veritatis
+                        in
+                        veniam quis sed autem velit, dolorem provident praesentium ex odio voluptates fugit officia? Quo
+                        pariatur vel officia in aliquid dolor? Ratione fugit molestiae at consequuntur magnam!
+                    </p>
+                </div>
+                <div class="direita shadow-sm flex-center">
+                    <img src="../../imagens/storyset/imagemSobre.png" alt="Quem somos, sobre nos, sobre, about">
+                </div>
+            </div>
+        </div>
+
+        <!-- contato -->
+        <div class="contato ">
+            <div class="container-lg shadow-md flex-center">
+                <div class="esquerda flex-center">
+                    <img src="../../imagens/storyset/imagemContato.png" alt="Contato, Mensagem, Notificar">
+                </div>
+                <div class="direita">
+                    <h2>Entre em contato</h2>
+                    <div class="container-input">
+                        <label for="in_email">E-mail:</label>
+                        <input type="text" id="in_email" class="input contato-input">
+                    </div>
+                    <div class="container-input">
+                        <label for="in_assunto">Assunto:</label>
+                        <input type="text" id="in_assunto" class="input contato-input">
+                    </div>
+                    <div class="container-input">
+                        <label for="in_mensagem">E-mail:</label>
+                        <textarea name="mensagem" class="input contato-input textarea" id="in_mensagem"></textarea>
+                    </div>
+                    <div class="container-checkbox flex-center">
+                        <input type="checkbox" id="ck_novidades" class="checkbox checkbox-contato">
+                        <label for="ck_novidades">Aceita Receber novidades da Magna</label>
+                    </div>
+                    <button class="btn btn-primary btn-contato" onclick="enviarMensagem()">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-lg">
+                <div class="logo">
+                    <a href="#inicio">
+                        <img src="../../imagens/magna/logoBranco.png" alt="Magna, Logotipo, Empresa">
+                    </a>
+                </div>
+                <div class="footer-meio flex-center">
+                    <span class="endereco">Av. Angélica, 1048 São Paulo - SP, 01227100
+                    </span>
+                    <span class="copyright">Copyright © 2010-2022 Magna Company S.L. Todos os direitos
+                        reservados.</span>
+                </div>
+                <div class="footer-redes">
+                    <span class="email">magna.sptech@gmail.com</span>
+                    <div class="redes-sociais">
+                        <a href="#link-facebook" class="icon" target="_blank">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </a>
+                        <a href="link-instagram" class="icon" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="link-linkedin" class="icon" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#link-google" class="icon" target="_blank">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="../../js/paginas/inicio.js"></script>
+
+</html>
