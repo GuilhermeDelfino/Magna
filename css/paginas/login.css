@@ -30,7 +30,7 @@
 }
 
 label {
-    margin-bottom: -16px;
+    margin-bottom: -8px;
 }
 
 .h1 {
@@ -40,14 +40,15 @@ label {
 
 input {
     align-self: center;
-    width: 407px;
+    width: 370px;
     border-radius: 4px;
     height: 30px;
     border: 0;
     padding-left: var(--padding-md);
+
 }
 
-.box_login span#crie {
+.box_login #crie {
     color: red;
     text-decoration: underline;
 }
@@ -72,9 +73,11 @@ button {
     background-size: cover;
 }
 
-.box_login span#erro {
-color: red;
+.box_login #erro {
+color: #e82847 ;
 font-family: sans-serif;
-border-radius: 20px;
+border-radius: 4px;
+background-color: rgba(232, 40, 72, .2);
+
 
 }
