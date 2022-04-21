@@ -91,6 +91,30 @@
   border: 3px solid red;
 }
 
+.mt {
+  margin-top: var(--margin);
+}
+
+.mb {
+  margin-bottom: var(--margin);
+}
+
+.margin {
+  margin: var(--margin);
+}
+
+.padding-md {
+  padding: var(--padding-md);
+}
+
+.padding-sm {
+  padding: var(--padding-sm);
+}
+
+.padding-lg {
+  padding: var(--padding-lg);
+}
+
 /* SHADOW */
 .shadow-sm {
   box-shadow: 0 4px 20px var(--color-shadow);
@@ -106,9 +130,9 @@
 
 /* TAGS */
 .btn {
-  width: 260px;
-  height: 50px;
-  font-size: var(--font-lg);
+  width: 160px;
+  padding: 0 var(--padding-lg);
+  font-size: var(--font-xmd);
   font-weight: 600;
   border-radius: var(--radius-sm);
   border: 0;

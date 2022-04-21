@@ -13,6 +13,7 @@
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../../css/paginas/login.css">
+        <link rel="shortcut icon" href="../../imagens/magna/favicon.ico" type="image/x-icon">
 
     </head>
 
@@ -46,13 +47,13 @@
                 <div class="box_login">
 
                     <h1 class="h1">Login</h1>
+                    <span id="erro" class="d-none"></span>
                     <label>E-mail:</label>
                     <input type="text" placeholder="insira seu email" id="inp_email">
                     <label>Senha:</label>
                     <input type="password" placeholder="Insira sua senha" id="inp_senha">
-                    <span id="erro" class="erro"></span>
                     <a href="esqueciSenha.html" class="hover-under">Esqueceu sua senha?</a>
-                    <a href="cadastro.html"> Não tem conta? <span id="crie"> Crie já!</span></a>
+                    <a href="cadastro.html">Não tem conta? <span id="crie"> Crie já!</span></a>
                     <button onclick="validar()">Entrar</button>
                 </div>
 

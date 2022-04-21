@@ -1,7 +1,3 @@
-body {
-    background-color: var(--color-light);
-}
-
 .simulador {
     flex-direction: row;
     background-color: var(--color-white);
