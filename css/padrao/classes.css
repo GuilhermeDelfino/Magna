@@ -68,14 +68,17 @@
 }
 
 .title-1 {
+  font-weight: 700;
   font-size: var(--font-title-1);
 }
 
 .title-2 {
+  font-weight: 700;
   font-size: var(--font-title-2);
 }
 
 .title-3 {
+  font-weight: 700;
   font-size: var(--font-title-3);
 }
 
@@ -92,11 +95,11 @@
 }
 
 .mt {
-  margin-top: var(--margin);
+  margin-top: var(--margin-lg);
 }
 
 .mb {
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-lg);
 }
 
 .margin {
