@@ -48,6 +48,18 @@
   font-size: var(--font-md);
 }
 
+.title-1 {
+  font-size: var(--font-title-1);
+}
+
+.title-2 {
+  font-size: var(--font-title-2);
+}
+
+.title-3 {
+  font-size: var(--font-title-3);
+}
+
 .bold {
   font-weight: bolder;
 }
