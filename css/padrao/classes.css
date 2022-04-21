@@ -1,3 +1,4 @@
+/* CONTAINERS */
 .container-lg {
   height: 100%;
   width: 100%;
@@ -30,12 +31,30 @@
   padding: 4px;
 }
 
+/* DISPLAY */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+/* FONTES */
 .font-sm {
   font-size: var(--font-sm);
 }
@@ -61,17 +80,18 @@
 }
 
 .bold {
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .lighter {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .border {
   border: 3px solid red;
 }
 
+/* SHADOW */
 .shadow-sm {
   box-shadow: 0 4px 20px var(--color-shadow);
 }
@@ -84,6 +104,7 @@
   box-shadow: 0px 20px 60px var(--color-shadow);
 }
 
+/* TAGS */
 .btn {
   width: 260px;
   height: 50px;
@@ -121,4 +142,18 @@ input:focus {
 .checkbox {
   width: 20px;
   height: 20px;
+}
+
+/* Hover */
+.hover-under:hover {
+  text-decoration: underline;
+}
+
+.hover-opacity {
+  opacity: .85;
+  transition: .35s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 1;
 }

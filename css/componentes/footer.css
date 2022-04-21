@@ -4,14 +4,7 @@
     height: 180px;
     color: var(--color-white);
 
-<<<<<<< HEAD
-    bottom: 0;
-    left: 0;    
-
-=======
     margin-top: 80px;
->>>>>>> 5b99b6f16ed4e68dc54aa3cd33e6d910dcebee84
-    font-size: var(--font-md);
 }
 
 .footer .logo img {
