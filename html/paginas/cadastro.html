@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
 
-    <link rel="stylesheet" href="../../css/index.css">
-
-
-</head>
-
-<body>
-
-    <!-- INICIO HEADER -->
-    <div class="header">
-        <div class="navbar container-lg ">
-            <div class="logo">
-                <a href="#home">
-                    <img src="../../imagens/magna/logoBranco2.png" alt="Logotipo, Logo, Image, Magna">
-                </a>
-            </div>
-            <ul class="menu">
-                <li class="item" title="Inicio"><a href="#home" class="link">Inicio</a></li>
-                <li class="item" title="Sobre"><a href="#about" class="link">Sobre</a></li>
-                <li class="item" title="Contato"><a href="#contact" class="link">Contato</a></li>
-                <li class="item" title="Simulador Financeiro"><a href="#simulator" class="link">Simulador</a></li>
-                <li class="item" title="Entrar"><a href="#signin" class="link">Entrar</a></li>
-                <li class="item" title="Cadastrar"><a href="#signup" class="link">Cadastrar</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- FIM HEADER -->
+        <link rel="stylesheet" href="../../css/index.css">
 
 
+    </head>
 
-    <!-- INICIO CADASTRO -->
-    <div class="container_pai container-lg">
+    <body>
 
-        <div class="container_esquerda">
-            <div class="container_titulo">
-                <h1 class="titulo">Cadastre-se</h1>
-            </div>
-
-            <div class="container_inputs">
-                <span class="texto">Nome do Shopping:</span>
-                <input type="text" placeholder="Informe o nome do Shopping" class="input">
-
-                <span class="texto">E-mail:</span>
-                <input type="text" placeholder="Informe o e-mail" class="input">
-
-                <span class="texto">CNPJ:</span>
-                <input type="text" placeholder="Informe o CNPJ do Shopping" class="input">
-
-                <span class="texto">Telefone:</span>
-                <input type="text" placeholder="Informe um telefone" class="input">
-
-                <span class="texto">Senha:</span>
-                <input type="password" placeholder="Informe uma senha de acesso" class="input">
-
-                <span class="texto">Confirmação de senha:</span>
-                <input type="password" placeholder="Confirme a senha de acesso" class="input">
-            </div>
-
-            <div class="container_aceitos_btn">
-                <div class="container_aceitos">
-
-                    <div class="container_termos">
-                        <input type="checkbox" id="privacidade" name="privacidade" checked>
-                        <label for="privacidade"> Aceito os termos de uso e privacidade.</label>
-                    </div>
-
-                    <div class="container_termos">
-                        <input type="checkbox" id="novidades" name="novidades" checked>
-                        <label for="novidades"> Aceito receber novidades da Magna.</label>
-                    </div>
+        <!-- INICIO HEADER -->
+        <div class="header">
+            <div class="navbar container-lg ">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="../../imagens/magna/logoBranco2.png" alt="Logotipo, Logo, Image, Magna">
+                    </a>
                 </div>
-
-                <div class="container_btn">
-                    <button class="btn">
-                        Cadastrar
-                    </button>
-                </div>
+                <ul class="menu">
+                    <li class="item" title="Inicio"><a href="inicio.html" class="link">Inicio</a></li>
+                    <li class="item" title="Sobre"><a href="inicio.html" class="link">Sobre</a></li>
+                    <li class="item" title="Contato"><a href="inicio.html" class="link">Contato</a></li>
+                    <li class="item" title="Simulador Financeiro"><a href="simulador.html" class="link">Simulador</a>
+                    </li>
+                    <li class="item" title="Entrar"><a href="./login.html" class="link">Entrar</a></li>
+                    <li class="item" title="Cadastrar"><a href="./cadastro.html" class="link">Cadastrar</a></li>
+                </ul>
             </div>
         </div>
+        <!-- FIM HEADER -->
+
+
+
+        <!-- INICIO CADASTRO -->
+        <div class="container_pai container-lg">
+
+            <div class="container_esquerda">
+                <div class="container_titulo">
+                    <h1 class="titulo">Cadastre-se</h1>
+                </div>
+
+                <div class="container_inputs">
+                    <span class="texto">Nome do Shopping:</span>
+                    <input type="text" placeholder="Informe o nome do Shopping" class="input">
+
+                    <span class="texto">E-mail:</span>
+                    <input type="text" placeholder="Informe o e-mail" class="input">
+
+                    <span class="texto">CNPJ:</span>
+                    <input type="text" placeholder="Informe o CNPJ do Shopping" class="input">
+
+                    <span class="texto">Telefone:</span>
+                    <input type="text" placeholder="Informe um telefone" class="input">
+
+                    <span class="texto">Senha:</span>
+                    <input type="password" placeholder="Informe uma senha de acesso" class="input">
+
+                    <span class="texto">Confirmação de senha:</span>
+                    <input type="password" placeholder="Confirme a senha de acesso" class="input">
+                </div>
+
+                <div class="container_aceitos_btn">
+                    <div class="container_aceitos">
+
+                        <div class="container_termos">
+                            <input type="checkbox" id="privacidade" name="privacidade" checked>
+                            <label for="privacidade"> Aceito os termos de uso e privacidade.</label>
+                        </div>
+
+                        <div class="container_termos">
+                            <input type="checkbox" id="novidades" name="novidades" checked>
+                            <label for="novidades"> Aceito receber novidades da Magna.</label>
+                        </div>
+                    </div>
+
+                    <div class="container_btn">
+                        <button class="btn">
+                            Cadastrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_direita">
+                <div class="container_texto">
+                </div>
+
+                <div class="container_img">
+                </div>
+            </div>
+        </div>
+<<<<<<< HEAD
 
         <div class="container_direita">
             <div class="container_texto">
@@ -100,45 +111,49 @@
         </div>
     </div>
     <!-- FIM CADASTRO -->
+=======
+        <!-- FIM CADASTRO -->
+>>>>>>> eb8a8d2662b70493f5a5c2332e21d24ab215b126
 
 
 
 
-    <!-- INICIO FOOTER -->
-    <div class="footer">
-        <div class="container-lg">
-            <div class="logo">
-                <a href="#inicio">
-                    <img src="../../imagens/magna/logoBranco.png" alt="Magna, Logotipo, Empresa">
-                </a>
-            </div>
-            <div class="footer-meio flex-center">
-                <span class="endereco">Av. Angélica, 1048 São Paulo - SP, 01227100
-                </span>
-                <span class="copyright">Copyright © 2010-2022 Magna Company S.L. Todos os direitos reservados.</span>
-            </div>
-            <div class="footer-redes">
-                <span class="email">magna.sptech@gmail.com</span>
-                <div class="redes-sociais">
-                    <a href="#link-facebook" class="icon" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
+        <!-- INICIO FOOTER -->
+        <div class="footer">
+            <div class="container-lg">
+                <div class="logo">
+                    <a href="#inicio">
+                        <img src="../../imagens/magna/logoBranco.png" alt="Magna, Logotipo, Empresa">
                     </a>
-                    <a href="link-instagram" class="icon" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="link-linkedin" class="icon" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#link-google" class="icon" target="_blank">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
+                </div>
+                <div class="footer-meio flex-center">
+                    <span class="endereco">Av. Angélica, 1048 São Paulo - SP, 01227100
+                    </span>
+                    <span class="copyright">Copyright © 2010-2022 Magna Company S.L. Todos os direitos
+                        reservados.</span>
+                </div>
+                <div class="footer-redes">
+                    <span class="email">magna.sptech@gmail.com</span>
+                    <div class="redes-sociais">
+                        <a href="#link-facebook" class="icon" target="_blank">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </a>
+                        <a href="link-instagram" class="icon" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="link-linkedin" class="icon" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#link-google" class="icon" target="_blank">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- FIM FOOTER -->
+        <!-- FIM FOOTER -->
 
-</body>
+    </body>
 
 </html>

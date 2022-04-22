@@ -1,10 +1,7 @@
-body{
-    background-color: var(--color-light);
-}
-.simulador{
+.simulador {
     flex-direction: row;
-    background-color:var(--color-white);
-    overflow:hidden;
+    background-color: var(--color-white);
+    overflow: hidden;
     padding: var(--padding-lg);
     padding-bottom: 10px;
     margin-top: 50px;
@@ -12,56 +9,60 @@ body{
     border-radius: var(--radius-lg);
 }
 
-.container-input{
-    background-color:var(--color-accent);
+.container-input {
+    background-color: var(--color-accent);
     padding: var(--padding-lg);
     color: var(--color-white);
     border-radius: var(--margin);
     margin: var(--margin);
 }
 
-.container-input h1{
+.container-input h1 {
     padding: var(--padding-lg);
     font-weight: bold;
     font-size: var(--font-lg);
 }
 
-h5{
+h5 {
     padding: 10px;
 }
-.container-resultado{
+
+.container-resultado {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 200px;
     justify-content: space-around;
 }
-.destaque{
+
+.destaque {
     color: var(--color-primary);
 }
-.container-input input{
+
+.container-input input {
     color: var(--color-dark);
     border-radius: var(--radius-sm);
-    border:none;
+    border: none;
     height: 35px;
     text-align: center;
 }
 
-.box{
+.box {
     padding: var(--padding-md);
     display: flex;
     flex-direction: column;
 }
-.box span{
+
+.box span {
     padding: 10px;
 }
 
-.dash{
-    width:30vw;
-    height:40vh;
+.dash {
+    width: 30vw;
+    height: 40vh;
 }
 
-.paragrafo{
+.paragrafo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -69,17 +70,19 @@ h5{
     height: 400px;
     margin: var(--margin-lg);
 }
-.paragrafo h4{
+
+.paragrafo h4 {
     font-weight: bolder;
 }
-.div_btn{
+
+.div_btn {
     display: flex;
     justify-content: space-around;
     margin: var(--margin);
 }
 
-button{
-    align-self:flex-end;
+button {
+    align-self: flex-end;
     background-color: #E83847;
     height: 40px;
     color: white;
@@ -91,7 +94,7 @@ button{
     width: 125px;
 }
 
-.box-simulador{
+.box-simulador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
