@@ -13,6 +13,7 @@
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../../css/paginas/login.css">
+        <link rel="shortcut icon" href="../../imagens/magna/favicon.ico" type="image/x-icon">
 
     </head>
 
@@ -26,44 +27,44 @@
                     </a>
                 </div>
                 <ul class="menu">
-                    <li class="item" title="Inicio"><a href="#home" class="link ">Inicio</a></li>
-                    <li class="item" title="Sobre"><a href="#about" class="link">Sobre</a></li>
-                    <li class="item" title="Contato"><a href="#contact" class="link">Contato</a></li>
-                    <li class="item" title="Simulador Financeiro"><a href="#simulator" class="link">Simulador</a></li>
-                    <li class="item" title="Entrar"><a href="#signin" class="link bold">Entrar</a></li>
-                    <li class="item" title="Cadastrar"><a href="#signup" class="link">Cadastrar</a></li>
+                    <li class="item" title="Inicio"><a href="inicio.html" class="link">Inicio</a></li>
+                    <li class="item" title="Sobre"><a href="inicio.html" class="link">Sobre</a></li>
+                    <li class="item" title="Contato"><a href="inicio.html" class="link">Contato</a></li>
+                    <li class="item" title="Simulador Financeiro"><a href="simulador.html" class="link">Simulador</a>
+                    </li>
+                    <li class="item" title="Entrar"><a href="./login.html" class="link bold">Entrar</a></li>
+                    <li class="item" title="Cadastrar"><a href="./cadastro.html" class="link">Cadastrar</a></li>
                 </ul>
             </div>
         </div>
 
         <!-- conteudo -->
 
+        <div class="container_login ">
+            <div class="nav_bar_login shadow-lg">
 
 
-        <div class="container_login shadow-sm">
-                   <div class="nav_bar_login">
+                <div class="box_login">
+
+                    <h1 class="h1">Login</h1>
+                    <span id="erro" class="d-none"></span>
+                    <label>E-mail:</label>
+                    <input type="text" placeholder="insira seu email" id="inp_email">
+                    <label>Senha:</label>
+                    <input type="password" placeholder="Insira sua senha" id="inp_senha">
+                    <a href="esqueciSenha.html" class="hover-under">Esqueceu sua senha?</a>
+                    <a href="cadastro.html">Não tem conta? <span id="crie"> Crie já!</span></a>
+                    <button onclick="validar()">Entrar</button>
+                </div>
 
 
-                     <div class="box_login shadow-sm">
+                <div class="box_img flex-center">
+                    <img src="../../imagens/storyset/imagemLogin.png" alt="Login, Entrar, Signin, Bem vindo de volta">
+                </div>
 
-                        <h1 class="h1">Login</h1>
-                        <label>E-mail:</label>
-                        <input type="text" placeholder="insira seu email" id="inp_email">
-                        <label>Senha:</label>
-                        <input type="password" placeholder="Insira sua senha" id="inp_senha">
-                        <span id="erro" class="erro"></span>
-                        <a href="esqueciSenha.html"> Esqueceu sua senha?</a>
-                        <a  href="cadastro.html"> Não tem conta? <span id="crie"> Crie já!</span></a>
-                        <button onclick="validar()">Entrar</button>
-                     </div>
-
-
-                     <div class="box_img"></div>
-
-                   </div>
+            </div>
 
         </div>
-
 
         <!-- footer -->
         <div class="footer">
@@ -76,7 +77,8 @@
                 <div class="footer-meio flex-center">
                     <span class="endereco">Av. Angélica, 1048 São Paulo - SP, 01227100
                     </span>
-                    <span class="copyright">Copyright © 2010-2022 Magna Company S.L. Todos os direitos reservados.</span>
+                    <span class="copyright">Copyright © 2010-2022 Magna Company S.L. Todos os direitos
+                        reservados.</span>
                 </div>
                 <div class="footer-redes">
                     <span class="email">magna.sptech@gmail.com</span>
@@ -93,12 +95,13 @@
                         <a href="#link-google" class="icon" target="_blank">
                             <i class="fa-brands fa-google"></i>
                         </a>
-            
+
                     </div>
                 </div>
             </div>
         </div>
     </body>
     <script src="../../js/paginas/login.js"></script>
+  <script src="../../js/global.js"></script>
 
 </html>

@@ -1,3 +1,4 @@
+/* CONTAINERS */
 .container-lg {
   height: 100%;
   width: 100%;
@@ -30,12 +31,30 @@
   padding: 4px;
 }
 
+/* DISPLAY */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+/* FONTES */
 .font-sm {
   font-size: var(--font-sm);
 }
@@ -48,18 +67,58 @@
   font-size: var(--font-md);
 }
 
+.title-1 {
+  font-weight: 700;
+  font-size: var(--font-title-1);
+}
+
+.title-2 {
+  font-weight: 700;
+  font-size: var(--font-title-2);
+}
+
+.title-3 {
+  font-weight: 700;
+  font-size: var(--font-title-3);
+}
+
 .bold {
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .lighter {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .border {
   border: 3px solid red;
 }
 
+.mt {
+  margin-top: var(--margin-lg);
+}
+
+.mb {
+  margin-bottom: var(--margin-lg);
+}
+
+.margin {
+  margin: var(--margin);
+}
+
+.padding-md {
+  padding: var(--padding-md);
+}
+
+.padding-sm {
+  padding: var(--padding-sm);
+}
+
+.padding-lg {
+  padding: var(--padding-lg);
+}
+
+/* SHADOW */
 .shadow-sm {
   box-shadow: 0 4px 20px var(--color-shadow);
 }
@@ -72,10 +131,11 @@
   box-shadow: 0px 20px 60px var(--color-shadow);
 }
 
+/* TAGS */
 .btn {
-  width: 260px;
-  height: 50px;
-  font-size: var(--font-lg);
+  width: 160px;
+  padding: 0 var(--padding-lg);
+  font-size: var(--font-xmd);
   font-weight: 600;
   border-radius: var(--radius-sm);
   border: 0;
@@ -96,8 +156,9 @@
   border: 0;
   margin-top: var(--margin);
   border-radius: var(--radius-sm);
-  padding: var(--padding-sm);
+  padding: var(--padding-sm) var(--padding-md);
   font-size: var(--font-xmd);
+  min-height: 30px;
   opacity: 0.9;
 }
 
@@ -109,4 +170,18 @@ input:focus {
 .checkbox {
   width: 20px;
   height: 20px;
+}
+
+/* Hover */
+.hover-under:hover {
+  text-decoration: underline;
+}
+
+.hover-opacity {
+  opacity: .85;
+  transition: .35s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 1;
 }

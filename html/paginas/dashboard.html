@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mudar em toda página o titulo -->
+        <title>Magna | Dashboard</title>
+        <!-- Padrão CSS e Icones FA -->
+        <link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../../imagens/magna/favicon.ico" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+
+    <body class="body-perfil flex-center">
+        <!-- header -->
+        <div class="header-user shadow-lg">
+            <div class="container-sm">
+                <div class="top">
+                    <div class="icon flex-center shadow-sm">
+                        <span>X</span>
+                    </div>
+                    <span class="nome-empresa">XPTO</span>
+                    <span class="cnpj-empresa">00.000.000/0001-00</span>
+                </div>
+
+                <ul class="menu">
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="./perfil.html">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Shopping</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item agora">
+                        <a class="menu-link " href="./dashboard.html">
+                            <i class="fa-solid fa-chart-area"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="./setores.html">
+                            <i class="fa-regular fa-hard-drive"></i>
+                            <span>Setores</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="./sensores.html">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <span>Sensores</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="./usuarios.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Usuários</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" onclick="logout()">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <span class="copy">
+                    Copyright © 2010-2022 Magna Company S.L.Todos os direitos reservados.
+                </span>
+            </div>
+        </div>
+        <!-- conteudo -->
+
+        <div class="dashboard">
+            <h1 class="title-1 mb">Dashboard</h1>
+            <div class="container">
+                <div class="box">
+                    <h2 class="font-lg">tempo médio sentado</h2>
+                    <h1 class="title-2">20min</h1>
+                </div>
+                <div class="box">
+                    <h2 class="font-lg">Clientes satisfeitos</h2>
+                    <h1 class="title-2">3000</h1>
+                </div>
+                <div class="box donut">
+                    <h2 class="font-lg mb">Avaliação dos clientes</h2>
+                    <div style="position: relative">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box2">
+                    <h2 class="font-lg mb">Lucro com nosso Software nos ultimos 12 meses</h2>
+                    <img src="../../imagens/line.png">
+                </div>
+            </div>
+            <div class="container">
+                <div class="box3">
+                    <h2 class="font-lg mb">Lucro com nosso Software nos ultimos 12 meses</h2>
+                    <img src="../../imagens/bar.png">
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="../../js/paginas/dashboard.js"></script>
+    <script src="../../js/global.js"></script>
+
+</html>
