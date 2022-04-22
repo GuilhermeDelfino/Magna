@@ -26,7 +26,7 @@ html {
 }
 
 .banner .texto-banner {
-    font-size: var(--font-lg);
+    font-size: var(--font-title-3);
     max-width: var(--size-md);
     line-height: 130%;
 }
