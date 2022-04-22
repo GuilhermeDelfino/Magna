@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Mudar em toda página o titulo -->
-    <title>Magna | Ínicio</title>
+    <title>Magna | Shopping</title>
     <!-- Padrão CSS e Icones FA -->
     <link rel="stylesheet" href="../../css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-        <link rel="shortcut icon" href="../../imagens/magna/favicon.ico" type="image/x-icon">
-        </head>
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../../imagens/magna/favicon.ico" type="image/x-icon">
+  </head>
 
   <body class="body-perfil flex-center">
     <!-- header -->
@@ -31,76 +28,73 @@
         </div>
 
         <ul class="menu">
+
           <li class="menu-item agora">
-            <a class="menu-link">
+            <a class="menu-link" href="./perfil.html">
               <i class="fa-solid fa-building"></i>
-              <span>Empresa</span>
+              <span>Shopping</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link">
-              <i class="fa-solid fa-bag-shopping"></i>
-              <span>Shoppings</span>
+            <a class="menu-link " href="./dashboard.html">
+              <i class="fa-solid fa-chart-area"></i>
+              <span>Dashboard</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link">
-              <img src="../../imagens/icones/section.png" alt="Setor" />
+            <a class="menu-link" href="./setores.html">
+              <i class="fa-regular fa-hard-drive"></i>
               <span>Setores</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link">
-              <img src="../../imagens/icones/sensor.png" alt="Sensor" />
+            <a class="menu-link" href="./sensores.html">
+              <i class="fa-solid fa-tower-broadcast"></i>
               <span>Sensores</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link">
-              <i class="fa-solid fa-gear"></i>
-              <span>Configurações</span>
+            <a class="menu-link" href="./usuarios.html">
+              <i class="fa-solid fa-users"></i>
+              <span>Usuários</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link">
+            <a class="menu-link" onclick="logout()">
               <i class="fa-solid fa-right-from-bracket"></i>
               <span>Sair</span>
             </a>
           </li>
+
         </ul>
         <span class="copy">
           Copyright © 2010-2022 Magna Company S.L.Todos os direitos reservados.
         </span>
       </div>
     </div>
-
     <div class="conteudo-perfil shadow-md">
       <div class="container flex-center">
-        <h1>Dados Empresariais</h1>
+        <h1>Dados do Shopping</h1>
         <div class="box">
           <div class="dados">
-            <span>Nome: XPTO Company</span>
+            <span>Nome: XPTO Shopping</span>
             <span>Telefone: (11) 96821-4590</span>
             <span>Email: xpto@sptech.school</span>
-            <span>Quantidade de Shoppings: 3</span>
             <span>CEP: 01227-100</span>
-            <span>Endereço: Av. Angélica, 1048</span>
-            <span>Bairro: Consolação</span>
-            <span>Cidade: São Paulo</span>
+            <span>Número: 4433</span>
             <span>CNPJ: 00.000.000/0001-00</span>
           </div>
-          <img
-            src="../../imagens/storyset/imagemPerfil.png"
-            alt="Companhia, Empresa, Time"
-          />
+          <img src="../../imagens/storyset/imagemPerfil.png" alt="Companhia, Empresa, Time" />
         </div>
       </div>
     </div>
   </body>
   <script src="../../js/paginas/perfil.js"></script>
+  <script src="../../js/global.js"></script>
+
 </html>

@@ -29,7 +29,8 @@ const data = {
 const config = {
     type: 'doughnut',
     data: data,
-    options: {}
+    options: {
+    }
 };
 
 const myChart = new Chart(

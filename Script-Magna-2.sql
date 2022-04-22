@@ -86,8 +86,8 @@ INSERT INTO Setor (assentosDisponiveis, apelidoSensor) VALUES
 
 CREATE TABLE Sensor (
 	idSensor INT,
-    apelidoSensor VARCHAR (45),
-    fkSetor INT,
+    apelidoSensor VARCHAR (45), 
+    fkSetor INT, 
     PRIMARY KEY (idSensor, fkSetor),
     FOREIGN KEY (fkSetor) REFERENCES Setor (idSetor)
 );
@@ -141,7 +141,15 @@ CREATE TABLE Registro (
 );
 
 INSERT INTO Registro (dataCaptura,captura) VALUES 
-    ('2022-03-22 00:19:28','ocupado'),
+    ('2022-03-22 00:20:00','ocupado'),
+    ('2022-03-22 00:22:00','ocupado'),
+    ('2022-03-22 00:24:00','ocupado'),
+    ('2022-03-22 00:26:00','ocupado'),
+
+    ('2022-03-22 00:24:00','ocupado'),
+    ('2022-03-22 00:30:00','ocupado'),
+    ('2022-03-22 00:40:00','ocupado'),
+
     ('2022-01-19 12:41:04','ocupado'),
     ('2022-01-04 07:52:31','ocupado'),
     ('2022-02-12 15:01:35','ocupado'),

@@ -1,5 +1,5 @@
 .header-user {
-    width: 300px;
+    width: 280px;
     height: 100vh;
     color: var(--color-light);
     background-color: var(--color-dark);
@@ -43,18 +43,20 @@
 }
 
 .header-user .menu {
-    width: 80%;
+    width: 60%;
     margin: var(--margin) auto;
-    font-size: var(--font-lg);
+    font-size: var(--font-xmd);
+}
+
+.header-user .menu a {
+    display: flex;
+    align-items: center;
 }
 
 .header-user .menu i {
-    font-size: 26px;
-    width: 26px;
-}
-
-.header-user .menu img {
-    width: 26px;
+    font-size: 24px;
+    text-align: center;
+    width: 36px;
 }
 
 .header-user .menu .menu-item {

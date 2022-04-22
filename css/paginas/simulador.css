@@ -9,7 +9,7 @@
     border-radius: var(--radius-lg);
 }
 
-.container-input {
+.simulador .container-input {
     background-color: var(--color-accent);
     padding: var(--padding-lg);
     color: var(--color-white);
@@ -17,17 +17,17 @@
     margin: var(--margin);
 }
 
-.container-input h1 {
+.simulador .container-input h1 {
     padding: var(--padding-lg);
     font-weight: bold;
     font-size: var(--font-lg);
 }
 
-h5 {
+.simulador h5 {
     padding: 10px;
 }
 
-.container-resultado {
+.simulador .container-resultado {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -35,11 +35,11 @@ h5 {
     justify-content: space-around;
 }
 
-.destaque {
+.simulador .destaque {
     color: var(--color-primary);
 }
 
-.container-input input {
+.simulador .container-input input {
     color: var(--color-dark);
     border-radius: var(--radius-sm);
     border: none;
@@ -47,22 +47,22 @@ h5 {
     text-align: center;
 }
 
-.box {
+.simulador .box {
     padding: var(--padding-md);
     display: flex;
     flex-direction: column;
 }
 
-.box span {
+.simulador .box span {
     padding: 10px;
 }
 
-.dash {
+.simulador .dash {
     width: 30vw;
     height: 40vh;
 }
 
-.paragrafo {
+.simulador .paragrafo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,17 +71,17 @@ h5 {
     margin: var(--margin-lg);
 }
 
-.paragrafo h4 {
+.simulador .paragrafo h4 {
     font-weight: bolder;
 }
 
-.div_btn {
+.simulador .div_btn {
     display: flex;
     justify-content: space-around;
     margin: var(--margin);
 }
 
-button {
+.simulador button {
     align-self: flex-end;
     background-color: #E83847;
     height: 40px;
@@ -94,7 +94,7 @@ button {
     width: 125px;
 }
 
-.box-simulador {
+.simulador .box-simulador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
