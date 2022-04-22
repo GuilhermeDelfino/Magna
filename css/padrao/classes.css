@@ -105,6 +105,7 @@
 .margin {
   margin: var(--margin);
 }
+
 .padding-md {
   padding: var(--padding-md);
 }
@@ -155,8 +156,9 @@
   border: 0;
   margin-top: var(--margin);
   border-radius: var(--radius-sm);
-  padding: var(--padding-sm);
+  padding: var(--padding-sm) var(--padding-md);
   font-size: var(--font-xmd);
+  min-height: 30px;
   opacity: 0.9;
 }
 

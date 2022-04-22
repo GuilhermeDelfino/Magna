@@ -3,12 +3,13 @@
     border-radius: 10px;
     padding: 60px;
     margin: 80px auto;
+    color: var(--color-light);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container_esquerda {
+.container_pai .container_esquerda {
     height: 100%;
     width: 60%;
     display: flex;
@@ -17,80 +18,81 @@
     align-items: center;
 }
 
-.container_titulo {
+.container_pai .container_titulo {
     margin-bottom: var(--margin-lg);
     width: 100%;
 }
 
-.container_inputs {
+.container_pai .container_inputs {
     width: 100%;
+    font-size: var(--font-xmd);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.container_aceitos_btn {
+.container_pai .container_aceitos_btn {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container_termos {
+.container_pai .container_termos {
     display: flex;
     align-items: center;
+    margin-bottom: var(--margin);
     flex-wrap: wrap;
-    color: white;
+    color: var(--color-light);
 }
-.container_termos input{
+
+.container_pai .container_termos input {
     width: 18px;
     height: 18px;
     margin-right: var(--margin);
 }
 
+.container_pai .container_btn .btn {
+    background-color: var(--color-primary);
+    height: 40px;
+    width: 220px;
+}
+
+.container_pai .titulo {
+    font-size: var(--font-title-3);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.container_pai .input {
+    margin-bottom: 15px;
+    font-size: var(--font-md);
+    margin-top: 2px;
+}
+
 .container_direita {
     height: 100%;
     width: 40%;
-     display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
-img {
+.container_direita img {
     width: 100%;
     height: 100%;
 }
 
-.container_texto {
+.container_direita .container_texto {
     width: 80%;
     color: var(--color-light);
     text-align: center;
     margin: 0 auto;
 }
 
-.container_img {
+.container_direita .container_img {
     width: 80%;
     margin: 0 auto;
     max-width: 400px;
-}
-
-.container_btn .btn {
-    background-color: var(--color-primary);
-    width: 220px;
-}
-
-.titulo {
-    font-size: var(--font-title-3);
-    font-weight: 700;
-    color: var(--color-white);
-}
-
-.texto {
-    color: var(--color-white);
-}
-
-.input {
-    margin-bottom: 15px;
-    margin-top: 0;
 }
