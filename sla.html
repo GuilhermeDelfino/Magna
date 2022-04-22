@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Magna</title>
+
+
+
+  </head>
+
+  <body>
+
+    <div class="sidenav">
+      <div class="box">
+        <img src="./imgs/user.png">
+        <h1>Nome</h1>
+        <h5>00.000.000/0001-00</h5>
+      </div>
+      <a href="#"><img src="./imgs/VectorUser.png">Empresa</a>
+      <a href="#"><img src="./imgs/VectorShop.png">Shoppings</a>
+      <a href="#"><img src="./imgs/VectorSetor.png">Setores</a>
+      <a href="#"><img src="./imgs/VectorSensor.png">Sensores</a>
+      <a href="#"><img src="./imgs/VectorConfg.png">Configurações</a>
+      <a href="#"><img src="./imgs/VectorSair.png">Sair</a>
+
+    </div>
+    <!-- teste -->
+    <div class="dashboard">
+      <p>Dashboard</p>
+      <div class="container">
+        <div class="box">
+          <h2>tempo médio sentado</h2>
+          <h1>20min</h1>
+
+        </div>
+        <div class="box">
+          <h2>Clientes satisfeitos</h2>
+          <h1>3000</h1>
+        </div>
+        <div class="box">
+          <div style="position: relative">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box2">
+          <h2>Lucro com nosso Software nos ultimos 12 meses</h2>
+          <div>
+            <canvas id="lineChart" width="300"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box3">
+          <h2>Lucro com nosso Software nos ultimos 12 meses</h2>
+          <div>
+            <canvas id="barChart" width="300"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+  <script>
+    const labels = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+
+    const data = {
+      labels: [
+        'Red',
+        'Blue',
+        'Yellow'
+      ],
+      datasets: [{
+        data: [300, 50, 100],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const config = {
+      type: 'doughnut',
+      data: data,
+      options: {}
+    };
+  </script>
+
+
+  <script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+
+  <script>
+    const labelsLine = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+
+    const dataLine = {
+      labels: labelsLine,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+
+    const configLine = {
+      type: 'line',
+      data: dataLine,
+      options: {}
+    };
+  </script>
+
+  <script>
+    const lineChart = new Chart(
+      document.getElementById('lineChart'),
+      configLine
+    );
+  </script>
+
+  <script>
+    const labelsBar = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+
+    const dataBar = {
+      labels: labelsBar,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+
+    const configBar = {
+      type: 'bar',
+      data: dataBar,
+      options: {}
+    };
+  </script>
+
+  <script>
+    const barChart = new Chart(
+      document.getElementById('barChart'),
+      configBar
+    );
+  </script>
+
+
+
+
+</html>

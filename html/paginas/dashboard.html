@@ -83,32 +83,54 @@
 
         <div class="dashboard">
             <h1 class="title-1 mb">Dashboard</h1>
+
+            <div class="container container-sm">
+                <div class="margin">
+                    <label for="Inicio">Inicio</label>
+                    <input type="date" class="input shadow-sm">
+                </div>
+                <div class="margin">
+                    <label for="Fim">Fim</label>
+                    <input type="date" class="input shadow-sm">
+                </div>
+                <button class="btn btn-primary margin shadow-sm">Calcular</button>
+            </div>
+
             <div class="container">
-                <div class="box">
-                    <h2 class="font-lg">tempo médio sentado</h2>
+                <div class="box shadow-md">
+                    <h2 class="font-lg">Tempo médio sensores ativos</h2>
                     <h1 class="title-2">20min</h1>
                 </div>
-                <div class="box">
-                    <h2 class="font-lg">Clientes satisfeitos</h2>
-                    <h1 class="title-2">3000</h1>
+                <div class="box shadow-md">
+                    <h2 class="font-lg">Setor mais utilizado</h2>
+                    <h1 class="title-2">Piso 2-A</h1>
                 </div>
-                <div class="box donut">
-                    <h2 class="font-lg mb">Avaliação dos clientes</h2>
+                <div class="box donut shadow-md">
+                    <h2 class="font-xmd mb">Lotação dos setores em tempo real</h2>
                     <div style="position: relative">
-                        <canvas id="myChart"></canvas>
+                        <span class="donut-number title-3" id="donut_number">
+                            1000
+                            <!-- Numero total -->
+                        </span>
+                        <canvas id="myChart">
+                        </canvas>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="box2">
-                    <h2 class="font-lg mb">Lucro com nosso Software nos ultimos 12 meses</h2>
-                    <img src="../../imagens/line.png">
+                <div class="box2 shadow-md">
+                    <h2 class="font-lg mb">Média picos de utilização por setor X Horário</h2>
+                    <div>
+                        <canvas id="lineChart" height="100"></canvas>
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="box3">
-                    <h2 class="font-lg mb">Lucro com nosso Software nos ultimos 12 meses</h2>
-                    <img src="../../imagens/bar.png">
+                <div class="box3 shadow-md">
+                    <h2 class="font-lg mb">Quantidade de superlotações no ultimo semestre</h2>
+                    <div>
+                        <canvas id="barChart" height="100"></canvas>
+                    </div>
                 </div>
             </div>
         </div>

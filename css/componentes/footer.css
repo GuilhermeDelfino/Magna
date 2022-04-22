@@ -5,6 +5,7 @@
     color: var(--color-white);
 
     margin-top: 80px;
+    box-shadow: -8px 0 16px var(--color-shadow);
 }
 
 .footer .logo img {
