@@ -11,22 +11,39 @@ html {
     background-size: cover;
     padding: 100px 0;
     color: var(--color-light);
+    position: relative;
+}
+
+.banner .escurecer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    opacity: .5;
+    background-image: linear-gradient(to right, #111 30%, #131313 70%);
+    position: absolute;
 }
 
 .banner .container-lg {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
+.banner .container-lg .btn {
+    z-index: 3;
+    height: 70px;
+    font-size: var(--font-lg);
+    width: 350px;
+}
+
 .banner .titulo-banner {
-    font-size: var(--font-title-1);
-    font-weight: 600;
+    z-index: 3;
     margin: var(--margin-lg) 0;
 }
 
 .banner .texto-banner {
-    font-size: var(--font-title-3);
+    z-index: 3;
+    font-size: var(--font-xmd);
+    text-align: center;
     max-width: var(--size-md);
     line-height: 130%;
 }

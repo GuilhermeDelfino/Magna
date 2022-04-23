@@ -50,6 +50,10 @@
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .d-none {
   display: none;
 }
@@ -128,12 +132,12 @@
 }
 
 .shadow-md {
-  box-shadow: inset 2px 2px 12px var(--color-white),
-    inset -2px -2px 12px var(--color-shadow);
+  box-shadow: inset 4px 4px 16px #d5d5d588,
+    inset -4px -4px 16px var(--color-shadow);
 }
 
 .shadow-lg {
-  box-shadow: 12px 12px 60px var(--color-shadow)
+  box-shadow: 12px 12px 32px var(--color-shadow)
 }
 
 /* TAGS */

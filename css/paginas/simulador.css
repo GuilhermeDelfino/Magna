@@ -84,7 +84,6 @@
 .simulador button {
     align-self: flex-end;
     background-color: #E83847;
-    height: 40px;
     color: white;
     border: none;
     border-radius: var(--radius-sm);

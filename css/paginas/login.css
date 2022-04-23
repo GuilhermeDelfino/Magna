@@ -16,7 +16,7 @@
     height: 100%;
     justify-content: space-evenly;
     background-color: var(--color-accent);
-    border-radius: 30px;
+    border-radius: var(--radius-lg);
     align-items: center;
 }
 
