@@ -43,30 +43,32 @@
         <!-- INICIO CADASTRO -->
         <div class="container_pai container-lg shadow-lg">
 
+            
             <div class="container_esquerda">
                 <div class="container_titulo">
                     <h1 class="titulo">Cadastre-se</h1>
                 </div>
+                <div id="erro"></div>
 
                 <div class="container_inputs">
                     <span class="texto">Nome do Shopping:</span>
-                    <input type="text" placeholder="Informe o nome do Shopping" class="input">
+                    <input type="text" id="in_nome" placeholder="Informe o nome do Shopping" class="input">
 
                     <span class="texto">E-mail:</span>
-                    <input type="email" autocomplete="email" inputmode="email" maxlength="10" minlength="2"
+                    <input type="email" id="in_email" autocomplete="email" inputmode="email" 
                         placeholder="Informe o e-mail" class="input">
 
                     <span class="texto">CNPJ:</span>
-                    <input type="text" placeholder="Informe o CNPJ do Shopping" class="input">
+                    <input type="text" id="in_cnpj" placeholder="Informe o CNPJ do Shopping" class="input">
 
                     <span class="texto">Telefone:</span>
-                    <input type="text" placeholder="Informe um telefone" class="input">
+                    <input type="text" id="in_tel" placeholder="Informe um telefone" class="input">
 
                     <span class="texto">Senha:</span>
-                    <input type="password" placeholder="Informe uma senha de acesso" class="input">
+                    <input type="password" id="in_senha" placeholder="Informe uma senha de acesso" class="input">
 
                     <span class="texto">Confirmação de senha:</span>
-                    <input type="password" placeholder="Confirme a senha de acesso" class="input">
+                    <input type="password" id="in_conf" placeholder="Confirme a senha de acesso" class="input">
                 </div>
 
                 <div class="container_aceitos_btn">
@@ -84,7 +86,7 @@
                     </div>
 
                     <div class="container_btn">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" onclick="validar()">
                             Cadastrar
                         </button>
                     </div>
@@ -144,6 +146,8 @@
             </div>
         </div>
         <!-- FIM FOOTER -->
+
+        <script src="../../js/paginas/cadastro.js"></script>
 
     </body>
 
